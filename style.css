@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.body{
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.header{
+    background-color: black;
+    padding: 1rem;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.search{
+    background: #fff;
+    color: #000;
+    height: 34px; 
+    border-radius: 6px;
+    padding: 0;
+}
+
+.search input,
+.search button{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    background: transparent;
+    color: #000;
+    border: none;
+    outline: none;      
+    height: 100%;
+    vertical-align: middle;
+}
+.search input{  
+    margin: 0;
+    padding: .5rem;
+}
+.search svg{
+    width: 40px;
+    padding: .15rem .3rem;
+}
+
+.movies{
+    background: rgb(228, 228, 228);
+    padding: 4rem 0;
+}
+
+#movies{    
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.movie{
+    height: 300px;
+    background: rgb(192, 133, 133);
+    overflow: hidden;    
+    position: relative;    
+    border-radius: 8px;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.movie:hover .overlay{
+    opacity: 1;
+}
+.video{
+    width: 100%;
+    height: 50%;
+    background: cornflowerblue;   
+}
+
+.details{
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 50%;
+    background: #9a23b4;
+    padding: 10px;
+}
